@@ -25,7 +25,7 @@ from a set of labeled training data, from which predictions can be
 made for subsequent data sets.
 
 %description -l pl
-Modu³ Algorithm::SVN jest implementacj± Support Vector Machine dla
+Modu³ Algorithm::SVM jest implementacj± Support Vector Machine dla
 Perla. Support Vector Machines udostêpniaj± sposób tworzenia funkcji
 klasyfikuj±cych ze zbioru oznaczonych danych treningowych, z których
 mo¿na dokonywaæ przewidywañ co do kolejnych zbiorów danych.
