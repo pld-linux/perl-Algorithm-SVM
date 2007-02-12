@@ -6,7 +6,7 @@
 %define		pdir	Algorithm
 %define		pnam	SVM
 Summary:	Perl bindings for the libsvm Support Vector Machine library
-Summary(pl):	Dowi±zania Perla do biblioteki libsvm (Support Vector Machine)
+Summary(pl.UTF-8):   DowiÄ…zania Perla do biblioteki libsvm (Support Vector Machine)
 Name:		perl-Algorithm-SVM
 Version:	0.11
 Release:	1
@@ -25,11 +25,11 @@ Vector Machines provide a method for creating classification functions
 from a set of labeled training data, from which predictions can be
 made for subsequent data sets.
 
-%description -l pl
-Modu³ Algorithm::SVM jest implementacj± Support Vector Machine dla
-Perla. Support Vector Machines udostêpniaj± sposób tworzenia funkcji
-klasyfikuj±cych ze zbioru oznaczonych danych treningowych, z których
-mo¿na dokonywaæ przewidywañ co do kolejnych zbiorów danych.
+%description -l pl.UTF-8
+ModuÅ‚ Algorithm::SVM jest implementacjÄ… Support Vector Machine dla
+Perla. Support Vector Machines udostÄ™pniajÄ… sposÃ³b tworzenia funkcji
+klasyfikujÄ…cych ze zbioru oznaczonych danych treningowych, z ktÃ³rych
+moÅ¼na dokonywaÄ‡ przewidywaÅ„ co do kolejnych zbiorÃ³w danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
