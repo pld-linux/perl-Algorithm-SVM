@@ -6,7 +6,7 @@
 %define		pdir	Algorithm
 %define		pnam	SVM
 Summary:	Perl bindings for the libsvm Support Vector Machine library
-Summary(pl.UTF-8):   Dowiązania Perla do biblioteki libsvm (Support Vector Machine)
+Summary(pl.UTF-8):	Dowiązania Perla do biblioteki libsvm (Support Vector Machine)
 Name:		perl-Algorithm-SVM
 Version:	0.11
 Release:	1
