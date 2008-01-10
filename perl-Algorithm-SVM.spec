@@ -39,6 +39,7 @@ można dokonywać przewidywań co do kolejnych zbiorów danych.
 	INSTALLDIRS=vendor
 
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
