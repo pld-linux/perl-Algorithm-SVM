@@ -8,13 +8,13 @@
 Summary:	Perl bindings for the libsvm Support Vector Machine library
 Summary(pl.UTF-8):	Dowiązania Perla do biblioteki libsvm (Support Vector Machine)
 Name:		perl-Algorithm-SVM
-Version:	0.11
-Release:	5
+Version:	0.13
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	95a77fc32f958c745d596940a50b7682
+# Source0-md5:	276ec1b341e05aa4c0353685f32ea4d5
 URL:		http://search.cpan.org/dist/Algorithm-SVM/
 BuildRequires:	libstdc++-devel
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -36,6 +36,8 @@ można dokonywać przewidywań co do kolejnych zbiorów danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+
+%{__sed} -i -e 's/#include <errno.h>/#include <errno.h>\n#include <stdlib.h>\n#include <string.h>/g' bindings.cpp
 
 %build
 %{__perl} Makefile.PL \
