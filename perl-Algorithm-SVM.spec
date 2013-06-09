@@ -41,6 +41,7 @@ można dokonywać przewidywań co do kolejnych zbiorów danych.
 
 %build
 %{__perl} Makefile.PL \
+	CCFLAGS="%{rpmcflags} -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64" \
 	INSTALLDIRS=vendor
 
 # cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
@@ -48,7 +49,7 @@ można dokonywać przewidywań co do kolejnych zbiorów danych.
 
 %{__make} \
 	CC="%{__cxx}" \
-	OPTIMIZE="%{rpmcxxflags}"
+	OPTIMIZE="%{rpmcxxflags} -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
 
 %{?with_tests:%{__make} test}
 
