@@ -71,7 +71,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Algorithm/*.pm
 %{perl_vendorarch}/Algorithm/SVM
 %dir %{perl_vendorarch}/auto/Algorithm/SVM
-%{perl_vendorarch}/auto/Algorithm/SVM/*.bs
 %{perl_vendorarch}/auto/Algorithm/SVM/*.ix
 %attr(755,root,root) %{perl_vendorarch}/auto/Algorithm/SVM/*.so
 %{_mandir}/man3/*
