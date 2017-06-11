@@ -9,7 +9,7 @@ Summary:	Perl bindings for the libsvm Support Vector Machine library
 Summary(pl.UTF-8):	Dowiązania Perla do biblioteki libsvm (Support Vector Machine)
 Name:		perl-Algorithm-SVM
 Version:	0.13
-Release:	9
+Release:	10
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
