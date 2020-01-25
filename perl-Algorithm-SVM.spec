@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Algorithm
 %define		pnam	SVM
 Summary:	Perl bindings for the libsvm Support Vector Machine library
